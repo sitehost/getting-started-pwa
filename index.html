@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PWA</title>
-        <link rel="stylesheet" href="src/master.css">
-    </head>
-    <body>
-        <p>Hi my name is Dom</p>
-        <script src="src/index.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#317EFB" />
+    <title>PWA</title>
+    <link rel="stylesheet" href="src/master.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/logo192.png">
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .add-button-app {
+            position: relative;
+            top: 1px;
+            left: 1px;
+            display: block;
+            background-color: blue;
+            color: cornsilk;
+            font-size: 28px;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+        }
+        
+        @media all and (display-mode: standalone) {
+            body {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="add-button-app">INSTALL THIS APP</div>
+    <p>Hi my name is Bret</p>
+    <button id="find-me">Show my location</button><br/>
+    <p id="status"></p>
+    <a id="map-link" target="_blank"></a>
+
+
+    <hr>
+
+
+
+
+
+
+
+
+
+    <script src="src/index.js"></script>
+</body>
+
 </html>
